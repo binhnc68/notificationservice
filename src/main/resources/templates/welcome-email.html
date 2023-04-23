@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p>
+        Dear  <b>name</b> on
+        <span th:text="${name}"></span>
+      </p>
+    <p th:text="${content}">
+        Hello!
+    </p>
+    <p>
+      Regards, <br />
+      <em>Nguyen Binh</em>
+    </p>
+  </body>
+</html>
